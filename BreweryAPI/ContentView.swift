@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var search: String = ""
+    @State private var results: [APIResult] = []
+    
     var body: some View {
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            TextField("Enter search item", text: $search)
+                .onChange(of: search) { oldValue, newValue in
+                    print("New value is: \(newValue)")
+                }
+            Text("API Results:")
         }
-        .padding()
     }
 }
 
