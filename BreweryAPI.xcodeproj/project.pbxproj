@@ -11,6 +11,8 @@
 		506EDBB82C008F1B0027E6ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506EDBB72C008F1B0027E6ED /* ContentView.swift */; };
 		506EDBBA2C008F1F0027E6ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506EDBB92C008F1F0027E6ED /* Assets.xcassets */; };
 		506EDBBD2C008F1F0027E6ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506EDBBC2C008F1F0027E6ED /* Preview Assets.xcassets */; };
+		506EDBC52C0090D80027E6ED /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506EDBC42C0090D80027E6ED /* APIResult.swift */; };
+		506EDBC82C00918D0027E6ED /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506EDBC72C00918D0027E6ED /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		506EDBB72C008F1B0027E6ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		506EDBB92C008F1F0027E6ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506EDBBC2C008F1F0027E6ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		506EDBC42C0090D80027E6ED /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		506EDBC72C00918D0027E6ED /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		506EDBB42C008F1B0027E6ED /* BreweryAPI */ = {
 			isa = PBXGroup;
 			children = (
-				506EDBB52C008F1B0027E6ED /* BreweryAPIApp.swift */,
+				506EDBC62C00915C0027E6ED /* Managers */,
+				506EDBC32C0090C10027E6ED /* Model */,
 				506EDBB72C008F1B0027E6ED /* ContentView.swift */,
+				506EDBB52C008F1B0027E6ED /* BreweryAPIApp.swift */,
 				506EDBB92C008F1F0027E6ED /* Assets.xcassets */,
 				506EDBBB2C008F1F0027E6ED /* Preview Content */,
 			);
@@ -65,6 +71,22 @@
 				506EDBBC2C008F1F0027E6ED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		506EDBC32C0090C10027E6ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				506EDBC42C0090D80027E6ED /* APIResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		506EDBC62C00915C0027E6ED /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				506EDBC72C00918D0027E6ED /* APIManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506EDBC82C00918D0027E6ED /* APIManager.swift in Sources */,
+				506EDBC52C0090D80027E6ED /* APIResult.swift in Sources */,
 				506EDBB82C008F1B0027E6ED /* ContentView.swift in Sources */,
 				506EDBB62C008F1B0027E6ED /* BreweryAPIApp.swift in Sources */,
 			);
