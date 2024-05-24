@@ -42,4 +42,32 @@ class APIManager: ObservableObject {
         }
         task.resume()
     }
+    
+    func detailSearchFor(id: String, completion: @escaping ([APIDetailedResult]) -> Void) {
+        let id = "/search?query=\(id)"
+        
+        guard let url = URL(string: baseURL + id) else {
+            print("Invalid URL")
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, responses, error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+                return
+            }
+            
+            let decoder = JSONDecoder()
+            
+            guard let data = data,
+                  let results = try? decoder.decode([APIDetailedResult].self, from: data) else {
+                print("Error decoding")
+                return
+            }
+            
+            completion(results)
+            
+        }
+        task.resume()
+    }
 }

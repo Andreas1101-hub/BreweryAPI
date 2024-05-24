@@ -13,6 +13,8 @@
 		506EDBBD2C008F1F0027E6ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506EDBBC2C008F1F0027E6ED /* Preview Assets.xcassets */; };
 		506EDBC52C0090D80027E6ED /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506EDBC42C0090D80027E6ED /* APIResult.swift */; };
 		506EDBC82C00918D0027E6ED /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506EDBC72C00918D0027E6ED /* APIManager.swift */; };
+		506EDBCB2C0097290027E6ED /* BreweryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506EDBCA2C0097290027E6ED /* BreweryDetailView.swift */; };
+		506EDBCD2C009CBB0027E6ED /* APIDetailedResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506EDBCC2C009CBB0027E6ED /* APIDetailedResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		506EDBBC2C008F1F0027E6ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		506EDBC42C0090D80027E6ED /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
 		506EDBC72C00918D0027E6ED /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		506EDBCA2C0097290027E6ED /* BreweryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryDetailView.swift; sourceTree = "<group>"; };
+		506EDBCC2C009CBB0027E6ED /* APIDetailedResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDetailedResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		506EDBB42C008F1B0027E6ED /* BreweryAPI */ = {
 			isa = PBXGroup;
 			children = (
+				506EDBC92C00971D0027E6ED /* Views */,
 				506EDBC62C00915C0027E6ED /* Managers */,
 				506EDBC32C0090C10027E6ED /* Model */,
 				506EDBB72C008F1B0027E6ED /* ContentView.swift */,
@@ -77,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				506EDBC42C0090D80027E6ED /* APIResult.swift */,
+				506EDBCC2C009CBB0027E6ED /* APIDetailedResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,6 +93,14 @@
 				506EDBC72C00918D0027E6ED /* APIManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		506EDBC92C00971D0027E6ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				506EDBCA2C0097290027E6ED /* BreweryDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,10 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506EDBCB2C0097290027E6ED /* BreweryDetailView.swift in Sources */,
 				506EDBC82C00918D0027E6ED /* APIManager.swift in Sources */,
 				506EDBC52C0090D80027E6ED /* APIResult.swift in Sources */,
 				506EDBB82C008F1B0027E6ED /* ContentView.swift in Sources */,
 				506EDBB62C008F1B0027E6ED /* BreweryAPIApp.swift in Sources */,
+				506EDBCD2C009CBB0027E6ED /* APIDetailedResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

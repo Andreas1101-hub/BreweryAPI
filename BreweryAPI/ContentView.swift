@@ -16,7 +16,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        VStack {
+        NavigationStack {
             TextField("Enter search item", text: $search)
                 .onChange(of: search) { oldValue, newValue in
                     print("New value is: \(newValue)")
@@ -25,10 +25,15 @@ struct ContentView: View {
                     }
                 }
             Text("API Results:")
-            
-            ForEach(results, id:\.id) { result in
-                Text("\(result.name)")
+        
+            List{
+                ForEach(results, id:\.id) { result in
+                    NavigationLink("\(result.name)") {
+                        BreweryDetailView(breweryId: result.id)
+                    }
+                }
             }
+            .navigationTitle("BreweryAPI")
         }
     }
 }
